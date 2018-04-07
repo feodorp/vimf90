@@ -3,6 +3,6 @@
 !Created=[:EVAL:]strftime('%c')[:END:]
 !Last Modified=[:EVAL:]strftime('%c')[:END:]
 module  [:EVAL:]expand('%:t:r')[:END:]
-Implicit None
+implicit none
 <++>                       
 end module  [:EVAL:]expand('%:t:r')[:END:]
