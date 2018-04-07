@@ -4,29 +4,29 @@ snippet prg
 ! Started at: `date +%d.%m.%y`
 ! Last Modified : Wed 17 Jun 2015 04:09:27 PM BST
 !
-Program  ${1:<++`!v expand('%:t:r')`}
-Implicit None
+program  ${1:<++`!v expand('%:t:r')`}
+implicit none
 ${2:<++Start Typing++>}
-End Program  ${1/([^\n$]+).*/$1/}
+end program  ${1/([^\n$]+).*/$1/}
 endsnippet
 
 snippet mod
-Module  m${1:`!v expand('%:t:r')`}  !
-Implicit None
+module  m${1:`!v expand('%:t:r')`}  !
+implicit none
 ${2:<++Start Typing++>}
-End Module  m${1/([^\n$]+).*/$1/}
+end module  m${1/([^\n$]+).*/$1/}
 endsnippet
 
 snippet sub
-Subroutine  ${1:<Subroutine>}()
-Implicit None
+subroutine  ${1:<Subroutine>}()
+implicit none
 ${2:<++Start Typing++>}
-End Subroutine ${1/([^\n$]+).*/$1/}
+end subroutine ${1/([^\n$]+).*/$1/}
 endsnippet
 
 snippet fun
-Function  ${1:<Function>}()
-Implicit None
+function  ${1:<Function>}()
+implicit none
 ${2:<++Start Typing++>}
-End Function 
+end function 
 endsnippet
