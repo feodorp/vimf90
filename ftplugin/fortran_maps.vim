@@ -37,14 +37,14 @@ nnoremap    <leader>cl      :call Link()<CR>
 noremap     <leader>cr      :call Run()<CR>
 noremap     <leader>ca      :call CLArgs()<CR>
 
-inoremap `prg               <Esc>:call Prog("prg")<cr><CR><Esc>gg=G<C-j>``
-nnoremap `prg               :call Prog("prg")<cr><CR><Esc>gg=G<C-j>
-inoremap `mod               <Esc>:call Prog("mod")<cr><CR><Esc>gg=G<c-j>``
-nnoremap `mod               :call Prog("mod")<cr><CR><Esc>gg=G<C-j>
-inoremap `sub               <Esc>:call Prog("sub")<cr><CR><Esc>gg=G<C-j>``
-nnoremap `sub               :call Prog("sub")<cr><CR><Esc>gg=G<C-j>
-inoremap `fun               <Esc>:call Prog("fun")<cr><CR><Esc>gg=G<C-j>``
-nnoremap `fun               :call Prog("fun")<cr><CR><Esc>gg=G<C-j>
+inoremap \prg               <Esc>:call Prog("prg")<cr><CR><Esc>gg=G<C-j>``
+nnoremap \prg               :call Prog("prg")<cr><CR><Esc>gg=G<C-j>
+inoremap \mod               <Esc>:call Prog("mod")<cr><CR><Esc>gg=G<c-j>``
+nnoremap \mod               :call Prog("mod")<cr><CR><Esc>gg=G<C-j>
+inoremap \sub               <Esc>:call Prog("sub")<cr><CR><Esc>gg=G<C-j>``
+nnoremap \sub               :call Prog("sub")<cr><CR><Esc>gg=G<C-j>
+inoremap \fun               <Esc>:call Prog("fun")<cr><CR><Esc>gg=G<C-j>``
+nnoremap \fun               :call Prog("fun")<cr><CR><Esc>gg=G<C-j>
 
 
 
