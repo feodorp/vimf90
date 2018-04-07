@@ -2,7 +2,7 @@
 !Author=[:EVAL:]expand($USER)[:END:]
 !Created=[:EVAL:]strftime('%c')[:END:]
 !Last Modified=[:EVAL:]strftime('%c')[:END:]
-Program [:EVAL:]expand('%:t:r')[:END:]
-Implicit None
+program [:EVAL:]expand('%:t:r')[:END:]
+implicit none
 <++>
-End Program [:EVAL:]expand('%:t:r')[:END:]
+end program [:EVAL:]expand('%:t:r')[:END:]
