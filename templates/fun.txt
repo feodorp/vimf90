@@ -1,4 +1,4 @@
 function  [:EVAL:]expand('%:t:r')[:END:]
-Implicit None
+implicit none
 <++>                       
 end function  [:EVAL:]expand('%:t:r')[:END:]
