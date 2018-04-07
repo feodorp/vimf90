@@ -4,5 +4,6 @@
 !Last Modified=[:EVAL:]strftime('%c')[:END:]
 module  [:EVAL:]expand('%:t:r')[:END:]
 implicit none
-<++>                       
+<++>
+contains
 end module  [:EVAL:]expand('%:t:r')[:END:]
