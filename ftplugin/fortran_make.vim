@@ -212,7 +212,7 @@ function! MakeMake()
     :let b:Fnm += split(globpath(i,"*"),"\n")
   endfor
   :let b:Nbin=expand('%:p:h:t')
-python<<EOF
+python3 << EOF
 import vim
 import os
 binname = vim.eval("b:Nbin")
