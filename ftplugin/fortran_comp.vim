@@ -29,7 +29,7 @@ if a:findstart
     return start
 else
     echomsg '**** completing' a:base
-python << EOF
+python3 << EOF
 import vim
 import os
 flsts = []
@@ -70,7 +70,7 @@ if a:findstart
     return start
 else
     echomsg '**** completing' a:base
-python << EOF
+python3 << EOF
 import vim
 import os
 flsts = []
@@ -111,7 +111,7 @@ endfunction
 
 function! Edname(arg) 
 :let Cbuf = bufname("%")
-python<<EOF
+python3 << EOF
 import vim
 import fileinput
 Cb=vim.eval("Cbuf")
@@ -149,11 +149,11 @@ function! FixName(arg)
         return
     endif
 
-    let lnum = search('\v\c^\s*End\s*' . a:arg . '\s+', 'cnW')
+    let lnum = search('\v\c^\s*end\s*' . a:arg . '\s+', 'cnW')
     call cursor(l, c, off)
     if !lnum
         return
     endif
 
-    call setline(lnum, substitute(getline(lnum), '\v\c^\s*End\s*' . a:arg . '\s+\zs.*', parts[1], ''))
+    call setline(lnum, substitute(getline(lnum), '\v\c^\s*end\s*' . a:arg . '\s+\zs.*', parts[1], ''))
 endfunction
