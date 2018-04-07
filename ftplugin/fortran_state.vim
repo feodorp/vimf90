@@ -26,12 +26,12 @@ inoremap <expr> / getline(".")[col(".")-2] =~ '\s' ? "/ " : "/"
 "inoremap <expr> / getline(".")[col(".")-2] =~ '[[:blank:])]' ? "/ " : "/"
 
 " Declarations: {{{1
-call IMAP ('\pr',  'print*,<++>',                 "fortran")
+call IMAP ('\prt', 'print*,<++>',                 "fortran")
 call IMAP ('\wr',  'write(<++>,*)<++>',           "fortran")
 call IMAP ('\rd',  'read(<++>,*)<++>',            "fortran")
 call IMAP ('\re',  'real(kind=<++>)::<++>',       "fortran")
 call IMAP ('\int', 'integer(kind=<++>)::<++>',    "fortran")
-call IMAP ('\cplx', 'complex(kind=<++>)::<++>',   "fortran")
+call IMAP ('\cplx','complex(kind=<++>)::<++>',   "fortran")
 call IMAP ('\ch',  'character(len=<++>)::<++>',   "fortran")
 call IMAP ('\dim', 'dimension(<++>)',             "fortran")
 call IMAP ('\par', 'parameter',                   "fortran")
