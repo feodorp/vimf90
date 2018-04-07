@@ -28,5 +28,5 @@ snippet fun
 function  ${1:<Function>}()
 implicit none
 ${2:<++Start Typing++>}
-end function 
+end function ${1/([^\n$]+).*/$1/}
 endsnippet
